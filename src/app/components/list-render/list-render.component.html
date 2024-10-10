@@ -4,7 +4,10 @@
         <li *ngFor="let animal of lista ">
             <! - animal = componente da lista ; lista = lista 
             let COMPONENTE of LISTA ->
-            Nomes: {{ animal.name}}    - tipo: {{animal.type}}
+            Nomes: {{ animal.nome}}    - tipo: {{animal.tipo}}
+            <button (click)="showAge(animal)">Idade do animal</button>
+            <button (click)="removeAnimal(animal)">Remover animal :c</button>
         </li>
     </ul>
+    <h3>{{detalhesAnimal}}</h3>
 </div>

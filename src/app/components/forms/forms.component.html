@@ -1,0 +1,11 @@
+<div class="aula">
+    <form>
+        <input type="text" [(ngModel)]="name"
+        name="name"
+        placeholder="digite seu nome">  
+        <input type="submit" name="enviar" >
+    </form>
+    <div *ngIf= "name !== ''">
+        <p>o nome é: {{name}}</p>
+    </div>
+</div>
