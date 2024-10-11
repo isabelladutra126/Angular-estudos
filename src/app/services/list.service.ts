@@ -5,10 +5,9 @@ import { Animais } from '../components/Animais';
   providedIn: 'root'
 })
 export class ListService {
-
   constructor() { }
 
-  remove(Animais: Animais[], animal: Animais){
-    return Animais.filter((a) => animal.nome !== a.nome);
+  remove(lista: Animais[], animal: Animais) {
+    return lista.filter((a)=> animal.nome !== a.nome);
   }
 }
